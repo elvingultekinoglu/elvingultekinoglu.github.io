@@ -1,0 +1,21 @@
+.navbar {
+    margin-bottom: 0;
+    background-color: black;
+    font-size: 16px;
+    color: #383837;
+    padding: 12px 12px;
+
+}
+
+.jumbotron {
+    height: 65vh;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+    color: #f3f3f3;
+}
+
+.content-section-b {
+    background-color: #eee;
+}
