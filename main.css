@@ -1,21 +1,26 @@
+/* styles.css */
+
+/* Navbar styles */
 .navbar {
     margin-bottom: 0;
-    background-color: black;
+    background-color: #3498db; /* Change this to your preferred navbar background color */
     font-size: 16px;
-    color: #383837;
+    color: #ffffff; /* Change this to your preferred navbar text color */
     padding: 12px 12px;
-
 }
 
+/* Jumbotron styles */
 .jumbotron {
     height: 65vh;
+    background-color: #2c3e50; /* Change this to your preferred jumbotron background color */
 }
 
 .jumbotron h1,
 .jumbotron h2 {
-    color: #f3f3f3;
+    color: #ecf0f1; /* Change this to your preferred jumbotron text color */
 }
 
+/* Content section B styles */
 .content-section-b {
-    background-color: #eee;
-}
+    background-color: #ecf0f1; /* Change this to your preferred background color for content section B */
+    co
