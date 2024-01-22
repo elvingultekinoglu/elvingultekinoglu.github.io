@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Elvin Gültekinoğlu</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
 
@@ -40,11 +40,11 @@
 
         /* Customize the color of links */
         a {
-            color: #800080; /* Purple color: #800080 */
+            color: #000000; /* Black color */
         }
 
         a:hover {
-            color: #9932cc; /* Purple color: #9932cc */
+            color: #333333; /* Darker shade of black for hover effect */
         }
 
         /* Customize the footer */
@@ -70,6 +70,13 @@
             height: 150px; /* Adjust the size as needed */
             object-fit: cover; /* Ensures the image covers the circular area */
         }
+
+        /* Style for the additional images */
+        .additional-images {
+            width: 100%; /* Full width */
+            height: auto; /* Maintain aspect ratio */
+            margin-top: 20px; /* Adjust spacing between images and text */
+        }
     </style>
 </head>
 
@@ -79,12 +86,12 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Who is this?</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
@@ -118,7 +125,10 @@
                 </div>
             </div>
             <div class="col-md-6 text-center">
-                <img src="background_main.jpeg" alt="Your Image Description" class="profile-image">
+                <!-- Additional images on the right -->
+                <img src="image1.jpeg" alt="Additional Image 1" class="additional-images">
+                <img src="image2.jpeg" alt="Additional Image 2" class="additional-images">
+                <img src="image3.jpeg" alt="Additional Image 3" class="additional-images">
             </div>
         </div>
     </div>
@@ -136,8 +146,9 @@
     </footer>
 
     <!-- Bootstrap and Font Awesome JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 
