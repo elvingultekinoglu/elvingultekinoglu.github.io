@@ -62,6 +62,14 @@
         .footer a:hover {
             color: #8898aa; /* Change this to your preferred link hover color */
         }
+
+        /* Customize the circular image */
+        .profile-image {
+            border-radius: 50%; /* Makes the image circular */
+            width: 150px; /* Adjust the size as needed */
+            height: 150px; /* Adjust the size as needed */
+            object-fit: cover; /* Ensures the image covers the circular area */
+        }
     </style>
 </head>
 
@@ -89,43 +97,30 @@
     <!-- Page Content -->
     <div class="container">
         <div class="row mt-5">
-            <div class="col-md-12 text-center">
+            <div class="col-md-6 text-center">
                 <div class="display-4 font-weight-bold">Welcome to my website!</div>
+                <div style="font-family: 'Calibri', sans-serif; font-size: 18px; color: #000000; padding: 20px;"> <!-- Black color -->
+                    <p>
+                        Hello there! Welcome to my website. I am Elvin Gültekinoğlu. In this site, you can find lots of things about me and my life. I hope you find them interesting and enjoy!
+                    </p>
+                    <p>
+                        I am currently an undergraduate student of mechanical engineering at Middle East Technical University. I am also continuing my minor specialized in flight vehicle control in aerospace engineering at Middle East Technical University.
+                    </p>
+                    <p>
+                        I have been working on different projects related to aviation, robotics, and control since 2020. I love designing unmanned aerial systems and seeing them work! I am eager to learn new concepts and apply them in real-life products.
+                    </p>
+                    <p>
+                        I am a fan of open-sourcing, and I share my knowledge with other people through different platforms. One such platform is Youtube. Yes, you got it right, I have a Youtube channel. I have videos about UAVs, ROS, Mavros, and my life.
+                        <br>
+                        <!-- Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual video ID or the full URL -->
+                        <a href="http://www.youtube.com/@elvingultekinoglu" target="_blank">Visit My Youtube Channel</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="background_main.jpeg" alt="Your Image Description" class="profile-image">
             </div>
         </div>
-    </div>
-
-    <!-- Add an image -->
-    <div class="mt-4 mb-4 text-center">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="background_main.jpeg" alt="Your Image Description">
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <div style="font-family: 'Calibri', sans-serif; font-size: 18px; color: #000000; padding: 20px;"> <!-- Purple color: #800080 -->
-                <p>
-                    Hello there! Welcome to my website. I am Elvin Gültekinoğlu. In this site you can find lots of things about me and my life. I hope you find them interesting and enjoy!
-                </p>
-                <p>
-                    I am currently an undergraduate student of mechanical engineering at Middle East Technical University. I am also continuing my minor specialized in flight vehicle control in aerospace engineering at Middle East Technical University.
-                </p>
-                <p>
-                    I have been working on different projects related to aviation, robotics, and control since 2020. I love designing unmanned aerial systems and seeing them to work! I am eager to learn new concepts and apply them in real-life products.
-                </p>
-                <p>
-                    I am a fan of open sourcing and I share my knowledge with other people through different platforms. One such platform is Youtube. Yes, you got it right, I have a Youtube channel. I have videos about UAVs, ROS, Mavros and my life. 
-                    <br>
-                    <!-- Replace 'YOUR_YOUTUBE_VIDEO_ID' with the actual video ID or the full URL -->
-                    <a href="http://www.youtube.com/@elvingultekinoglu" target="_blank">Visit My Youtube Channel</a>
-                </p>
-            </div>
-        </div>
-    </div>
     </div>
 
     <!-- Other people may like it too! -->
