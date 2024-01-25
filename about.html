@@ -215,7 +215,7 @@
                             <li>SKY Discover Participation Certificate – TUSAŞ (2023)</li>
                             <!-- Balloon container -->
                             <div class="balloon-container">
-                                <a href="#" onmouseover="showBalloon()" onmouseout="hideBalloon()">See the certificate!</a>
+                                <a href="#" onmouseover="showBalloon2()" onmouseout="hideBalloon2()">See the certificate!</a>
                                 <!-- Balloon image -->
                                 <div class="balloon-image">
                                     <img src="tusas_staj_sertifika.jpeg" alt="Balloon Image 2">
@@ -255,6 +255,14 @@
         }
 
         function hideBalloon() {
+            document.querySelector('.balloon-image').style.display = 'none';
+        }
+
+        function showBalloon2() {
+            document.querySelector('.balloon-image').style.display = 'block';
+        }
+
+        function hideBalloon2() {
             document.querySelector('.balloon-image').style.display = 'none';
         }
     </script>
