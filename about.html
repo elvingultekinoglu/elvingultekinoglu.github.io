@@ -63,13 +63,23 @@
             color: #8898aa; /* Change this to your preferred link hover color */
         }
 
-        /* Hide the certificate initially */
-        .tubitak-image {
+        /* Balloon image styles */
+        .balloon-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .balloon-image {
             display: none;
-            max-width: 100%; /* Make sure the image does not exceed its container */
-            width: 80%; 
-            height: auto; /* Maintain the aspect ratio of the image */
-            margin-top: 10px; /* Add some space between the images */
+            position: absolute;
+            top: -150px; /* Adjust the distance from the text */
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff;
         }
     </style>
 </head>
@@ -181,7 +191,14 @@
                         <!-- Customize the content below -->
                         <ul>
                             <li>International Unmanned Aerial Vehicles Competition – TEKNOFEST (awarded by TÜBİTAK) (2022)</li>
-                            <p style="cursor: pointer; color: #800080;" onclick="toggleTubitakCertificate()">International Unmanned Aerial Vehicles Competition – TEKNOFEST (awarded by TÜBİTAK) (2022)</p>
+                            <!-- Balloon container -->
+                            <div class="balloon-container">
+                                <a href="#" onmouseover="showBalloon()" onmouseout="hideBalloon()">Hover me!</a>
+                                <!-- Balloon image -->
+                                <div class="balloon-image">
+                                    <img src="teknofest_iha_sertifika.jpeg" alt="Balloon Image">
+                                </div>
+                            </div>
                             <li>Structural Analysis Training Camp Certificate – Numesys (2023)</li>
                             <li>Fluids Analysis Training Camp Certificate – Numesys (2023)</li>
                             <li>Introduction to ANSYS Fluent – Numesys (2023)</li>
@@ -221,13 +238,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- Add JavaScript to toggle the visibility of the certificate image -->
+    <!-- JavaScript for balloon image -->
     <script>
-        function toggleTubitakCertificate() {
-            var certificateImage = document.getElementById('TubitakCertificateImage');
-            certificateImage.style.display = certificateImage.style.display === 'none' ? 'block' : 'none';
+        function showBalloon() {
+            document.querySelector('.balloon-image').style.display = 'block';
+        }
+
+        function hideBalloon() {
+            document.querySelector('.balloon-image').style.display = 'none';
         }
     </script>
+
 </body>
 
 </html>
