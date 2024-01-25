@@ -108,6 +108,26 @@
             width: 100%;
             height: auto; /* Maintain the aspect ratio of the image */
         }
+
+        .balloon-image-3 {
+            display: none;
+            position: fixed;
+            top: 50%;
+            right: 35px; /* Adjust the distance from the right side */
+            transform: translateY(-50%);
+            z-index: 999;
+            border: 1px solid #9370DB;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #fff;
+            max-width: 500px; /* Set the maximum width */
+        }
+
+        .balloon-image-3 img {
+            max-width: 100%; /* Set the maximum width of the image to 100% of its container */
+            width: 100%;
+            height: auto; /* Maintain the aspect ratio of the image */
+        }
     </style>
 </head>
 
@@ -228,6 +248,14 @@
                             </div>
                             <li>Structural Analysis Training Camp Certificate – Numesys (2023)</li>
                             <li>Fluids Analysis Training Camp Certificate – Numesys (2023)</li>
+                            <!-- Balloon container -->
+                            <div class="balloon-container">
+                                <a href="#" onmouseover="showBalloon3()" onmouseout="hideBalloon3()">See the certificate!</a>
+                                <!-- Balloon image -->
+                                <div class="balloon-image-3">
+                                    <img src="Images/CFD_sertifika.png" alt="Balloon Image 3">
+                                </div>
+                            </div>
                             <li>Introduction to ANSYS Fluent – Numesys (2023)</li>
                             <li>Introduction to ANSYS Meshing – Numesys (2023)</li>
                             <li>Introduction to ANSYS Mechanical – Numesys (2023)</li>
@@ -284,6 +312,14 @@
 
         function hideBalloon2() {
             document.querySelector('.balloon-image-2').style.display = 'none';
+        }
+
+        function showBalloon3() {
+            document.querySelector('.balloon-image-3').style.display = 'block';
+        }
+
+        function hideBalloon3() {
+            document.querySelector('.balloon-image-3').style.display = 'none';
         }
     </script>
 
