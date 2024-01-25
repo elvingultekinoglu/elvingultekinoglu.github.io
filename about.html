@@ -73,7 +73,7 @@
             display: none;
             position: fixed;
             top: 50%;
-            right: 10px; /* Adjust the distance from the right side */
+            right: -50px; /* Adjust the distance from the right side */
             transform: translateY(-50%);
             z-index: 999;
             border: 2px solid #ccc;
@@ -81,6 +81,11 @@
             padding: 10px;
             background-color: #fff;
             max-width: 200px; /* Set the maximum width */
+        }
+
+        .balloon-image img {
+            max-width: 50%; /* Set the maximum width of the image to 100% of its container */
+            height: auto; /* Maintain the aspect ratio of the image */
         }
     </style>
 </head>
@@ -161,14 +166,6 @@
                         <!-- Customize the content below -->
                         <ul>
                             <li>Unmanned aerial vehicle control systems - ROS (Robot Operating System), MAVROS (extendable communication network)</li>
-                            <!-- Balloon container -->
-                            <div class="balloon-container">
-                                <a href="#" onmouseover="showBalloon()" onmouseout="hideBalloon()">Hover me!</a>
-                                <!-- Balloon image -->
-                                <div class="balloon-image">
-                                    <img src="teknofest_iha_sertifika.jpeg" alt="Balloon Image">
-                                </div>
-                            </div>
                             <li>PX4 & Ardupilot Autopilot Software</li>
                             <li>Gazebo simulation</li>
                             <li>C/C++</li>
@@ -200,6 +197,14 @@
                         <!-- Customize the content below -->
                         <ul>
                             <li>International Unmanned Aerial Vehicles Competition – TEKNOFEST (awarded by TÜBİTAK) (2022)</li>
+                            <!-- Balloon container -->
+                            <div class="balloon-container">
+                                <a href="#" onmouseover="showBalloon()" onmouseout="hideBalloon()">See the certificate!</a>
+                                <!-- Balloon image -->
+                                <div class="balloon-image">
+                                    <img src="teknofest_iha_sertifika.jpeg" alt="Balloon Image">
+                                </div>
+                            </div>
                             <li>Structural Analysis Training Camp Certificate – Numesys (2023)</li>
                             <li>Fluids Analysis Training Camp Certificate – Numesys (2023)</li>
                             <li>Introduction to ANSYS Fluent – Numesys (2023)</li>
